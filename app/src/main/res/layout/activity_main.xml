@@ -8,14 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="78dp"
-        android:layout_height="29dp"
-        android:text="Welkomm!!"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="Welkomm!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189" />
+        app:layout_constraintVertical_bias="0.228" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
