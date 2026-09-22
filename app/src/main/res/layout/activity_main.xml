@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="78dp"
         android:layout_height="29dp"
-        android:text="Welkom!"
+        android:text="Welkomm!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
