@@ -1,5 +1,6 @@
 package com.example.homeassistantdasboard
-
+import android.content.Intent;
+import android.widget.Button;
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +15,12 @@ class MainActivity : AppCompatActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+            insetsButton button = findViewById(R.id.button);
+
+            Buttonse.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, dasboard
+            startActivity(intent);
+        });
         }
     }
 }
