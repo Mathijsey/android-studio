@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -16,67 +18,93 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottomBar"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        app:cardBackgroundColor="#03A9F4"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeWidth="0dp">
 
-<!--    <Button-->
-<!--        android:id="@+id/button"-->
-<!--        android:layout_width="360dp"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:backgroundTint="#03A9F4"-->
-<!--        android:text="taakbalk"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
-<!--        android:textSize="25dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.496"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.976" />-->
+            <!-- Vak 1 -->
+            <FrameLayout
+                android:id="@+id/navItem1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-<!--    -->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/house" />
+
+            </FrameLayout>
+
+            <!-- Vak 2 -->
+            <FrameLayout
+                android:id="@+id/navItem2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lamp" />
 
 
-    <?xml version="1.0" encoding="utf-8"?>
+            </FrameLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F5F5F5">
+            <!-- Vak 3 -->
+            <FrameLayout
+                android:id="@+id/navItem3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-        <!-- Zwevende afgeronde navbar -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/bottomNavContainer"
-            android:layout_width="0dp"
-            android:layout_height="64dp"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/usr" />
 
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
 
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="32dp"
-            app:cardElevation="4dp"
-            app:strokeWidth="0dp"
+            </FrameLayout>
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottomNavigation"
-                android:layout_width="360dp"
-                android:layout_height="60dp"
+            <FrameLayout
+                android:id="@+id/navItem4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-                android:background="@android:color/transparent"
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/settings1" />
 
-                app:itemIconTint="@color/nav_item_color"
-                app:itemTextColor="@color/nav_item_color"
-                app:labelVisibilityMode="labeled"
-                app:menu="@menu/bottom_navigation_menu" />
+            </FrameLayout>
 
-        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

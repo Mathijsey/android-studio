@@ -20,21 +20,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#03A9F4"
-        android:text="login"
+        android:layout_height="65dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="28dp"
 
-        android:textSize="25dp"
+        android:backgroundTint="#03A9F4"
+        android:elevation="50dp"
+
+        android:text="login"
+        android:textSize="25sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/gebruikersnaam"
