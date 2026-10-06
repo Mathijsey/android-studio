@@ -10,6 +10,7 @@
     tools:context=".dasboard">
 
     <!-- Titel -->
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="#F5F5F5"
+        app:cardBackgroundColor="#023768"
         app:cardCornerRadius="20dp"
         app:cardElevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +47,8 @@
                 android:id="@+id/playButton2"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="▶️"
                 android:backgroundTint="#0557A2"
+                android:text="▶️"
                 android:textAllCaps="false"
                 app:iconSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -62,8 +63,8 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="122dp"
-                android:text="⏸"
                 android:backgroundTint="#0557A2"
+                android:text="⏸"
                 android:textAllCaps="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -76,15 +77,27 @@
                 android:id="@+id/stopButton"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:backgroundTint="#0557A2"
                 android:text="🛑"
                 android:textAllCaps="false"
-                android:backgroundTint="#0557A2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.912"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.9" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="380dp"
+                android:layout_height="4dp"
+                android:text="Button"
+                android:backgroundTint="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.576" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

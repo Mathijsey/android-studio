@@ -8,8 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class dasboard : AppCompatActivity() {
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
+class dasboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -50,7 +53,49 @@ class dasboard : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+//        private fun mediaPlay() {
+//
+//            val url = "$homeAssistantUrl/api/services/media_player/media_play"
+//
+//            val json = """
+//        {
+//            "entity_id": "media_player.woonkamer"
+//        }
+//    """.trimIndent()
+//
+//            val body = json.toRequestbody(
+//                "application/json".toMediaType()
+//            )
+//
+//            val request = Request.Builder()
+//                .url(url)
+//                .post(body)
+//                .addHeader("Authorization", "Bearer $accessToken")
+//                .addHeader("Content-Type", "application/json")
+//                .build()
+//
+//            CoroutineScope(Dispatchers.IO).launch {
+//                try {
+//                    val response = client.newCall(request).execute()
+//
+//                    runOnUiThread {
+//                        if (response.isSuccessful) {
+//                            Toast.makeText(
+//                                this@dasboard,
+//                                "Afspelen",
+//                                Toast.LENGTH_SHORT
+//                            ).show()
+//                        }
+//                    }
+//
+//                } catch (e: Exception) {
+//                    e.printStackTrace()
+//                }
+//            }
+        }
     }
-}
+
+
 
 
