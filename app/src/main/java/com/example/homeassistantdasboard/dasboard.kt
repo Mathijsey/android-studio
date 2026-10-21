@@ -57,16 +57,49 @@ class dasboard : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
         val playButton = findViewById<ImageView>(
             R.id.playButton2
         )
+        val pauseButton = findViewById<ImageView>(
+            R.id.pauseButton2
+        )
+        val skipbutton = findViewById<ImageView>(
+            R.id.pauseButton
+        )
+
+        val stopbutton = findViewById<ImageView>(
+            R.id.stopButton
+        )
+
+
 
         playButton.setOnClickListener {
             sendWebhook(
                 url = "http://192.168.2.8:8123/api/webhook/android-studio-QEUbUZC-pWuN4HTYJ1KsaVMf",
                 payload = """{"event":"button_pressed"}"""
             )
+
+            pauseButton.setOnClickListener {
+                sendWebhook(
+                    url = "http://192.168.2.8:8123/api/webhook/-ShpvI2FfCPS1p85Y29hOdclm",
+                    payload = """{"event":"button_pressed"}"""
+                )
+
+                skipbutton.setOnClickListener {
+                    sendWebhook(
+                        url = "http://192.168.2.8:8123/api/webhook/-fPlOOrZVlQurltbQRD9J8XAP",
+                        payload = """{"event":"button_pressed"}"""
+                    )
+
+                    stopbutton.setOnClickListener {
+                        sendWebhook(
+                            url = "http://192.168.2.8:8123/api/webhook/-75Olb8q7E53a2VIfCIUpwgmf",
+                            payload = """{"event":"button_pressed"}"""
+                        )
+
+                    }
+                }
+            }
         }
     }
 
@@ -113,3 +146,11 @@ class dasboard : AppCompatActivity() {
         })
     }
 }
+
+
+
+
+
+
+
+

@@ -89,21 +89,21 @@
 
             <ImageView
                 android:id="@+id/stopButton"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
+                android:layout_width="69dp"
+                android:layout_height="58dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="2dp"
                 android:backgroundTint="#0557A2"
-                android:src="@drawable/add"
+                android:src="@drawable/stopgoed"
                 android:textAllCaps="false"
                 app:cornerRadius="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.983"
+                app:layout_constraintHorizontal_bias="0.976"
                 app:layout_constraintStart_toEndOf="@+id/pauseButton"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.957" />
+                app:layout_constraintVertical_bias="0.943" />
 
             <Button
                 android:id="@+id/button2"
@@ -217,6 +217,11 @@
                     android:layout_gravity="center"
                     android:contentDescription="Instellingen"
                     android:src="@drawable/settings1" />
+
+
+
+
+
 
             </FrameLayout>
 
