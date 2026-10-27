@@ -40,6 +40,8 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
@@ -50,3 +52,6 @@ dependencies {
     }
 
 
+dependencies {
+    implementation("io.github.dennisschroeder:khome:0.1.0") // Example version
+}
