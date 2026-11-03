@@ -32,7 +32,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         app:cardBackgroundColor="#064680"
-        app:cardCornerRadius="30dp"
+        app:cardCornerRadius="20dp"
         app:cardElevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/playButton2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.971" />
+                app:layout_constraintVertical_bias="0.971"/>
 
             <ImageView
                 android:id="@+id/pauseButton"
@@ -218,20 +218,6 @@
                     android:contentDescription="Instellingen"
                     android:src="@drawable/settings1" />
 
-
-                <TextView
-                    android:id="@+id/trackText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:gravity="center"
-                    android:text="Muziek wordt geladen..."
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:maxLines="2"
-                    android:ellipsize="end"
-                    android:padding="12dp" />
 
 
 
