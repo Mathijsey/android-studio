@@ -18,6 +18,8 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 import java.io.IOException
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 
 
 class dasboard : AppCompatActivity() {
@@ -25,6 +27,10 @@ class dasboard : AppCompatActivity() {
     private val client = OkHttpClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        lifecycleScope.launch {
+            readSong()
+        }
+
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
