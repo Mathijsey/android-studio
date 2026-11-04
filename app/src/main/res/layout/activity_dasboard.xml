@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/achtergrond"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".dasboard">
@@ -12,6 +13,7 @@
 
     <TextView
         android:id="@+id/textView2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
@@ -31,7 +33,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-        app:cardBackgroundColor="#064680"
+        app:cardBackgroundColor="#18BAEE"
         app:cardCornerRadius="20dp"
         app:cardElevation="2dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +50,7 @@
                 android:layout_height="60dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginBottom="2dp"
-                android:backgroundTint="#0557A2"
+                android:backgroundTint="#000000"
                 android:src="@drawable/playbutton"
                 android:textAllCaps="false"
                 app:cornerRadius="20dp"

@@ -1,6 +1,7 @@
 
 package com.example.homeassistantdasboard
-
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -18,20 +19,20 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 import java.io.IOException
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.launch
 
 
 class dasboard : AppCompatActivity() {
 
     private val client = OkHttpClient()
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
         lifecycleScope.launch {
             readSong()
         }
-
-        super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
         setContentView(R.layout.activity_dasboard)
